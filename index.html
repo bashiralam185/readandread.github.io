@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta charset="utf-8"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.min.js"></script> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      position: relative; 
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Software Engineering</a>
+          </div>
+          <ul class="nav navbar-nav" style="background-color: rgb(210, 233, 110);">
+            <li class="nav-item"><a class="nav-link" href="#section0">Subjects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section1">Operating system</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section2">Software Engineering</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section3">My Place</a></li>
+          </ul>
+        </div>
+      </nav>
+
+<div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+  <h1>Operating System</h1>
+  <img class="img-responsive" src="operating.webp" alt="Chania">
+  <p>
+    An operating system is a software programme required to manage and operate a computing device like smartphones, tablets, computers, supercomputers, web servers, cars, network towers, smartwatches, etc. It is the operating system that eliminates the need to know coding language to interact with computing devices.</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+  <h1>Software Engineering</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="https://en.wikipedia.org/wiki/Software_engineering">
+          <img src="software.jpeg" style="width:100%">
+          <div class="caption">
+            <p>Read about SE</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="https://www.ibm.com/docs/en/rsas/7.5.0?topic=model-design">
+          <img src="s.png"  style="width:100%">
+          <div class="caption">
+            <p>Desiging model</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="https://en.wikipedia.org/wiki/Software_engineering">
+          <img src="software.jpeg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p>Software Engineering</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <p>Software engineering is an engineering approach on a software development of systematics application.[1][2][3]
+
+    A software engineer is a person who applies the principles of software engineering to design, develop, maintain, test, and evaluate computer software. The term programmer is sometimes used as a synonym, but may also lack connotations of engineering education or skills.
+    
+    Engineering techniques are used to inform[clarification needed] the software development process[1][4] which involves the definition, implementation, assessment, measurement, management, change, and improvement of the software life cycle process itself. It heavily uses software configuration management[1][4] which is about systematically controlling changes to the configuration, and maintaining the integrity and traceability of the configuration and code throughout the system life cycle.</p>
+</div>
+
+
+
+
+<div id="section3" class="container-fluid bg-info" style="padding-top:100px;padding-bottom:100px;padding-left:300px; padding-right: 300px;">
+  <h1>My Vally</h1>
+  <img class="img-responsive" src="vally.jpg">
+
+  <p>This picture was taken by me in Sep-2020. This is my vally, named Sandi</p>
+
+</div>
+<div id="section41" class="container-fluid bg-light" style="padding-top:100px;padding-bottom:100px;padding-left:300px; padding-right: 300px;">
+  <h1>Sandi</h1>
+  <p>This picture is also taken by me. It is my village where i was born</p>
+  <img class="img-responsive" src="vally1.jpg"><br>
+
+  <p id="p1"></p>
+  <script>
+     var today = new Date();
+     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+     document.getElementById("p1").innerHTML = date + "<br>" + time;
+  </script>
+</div>
+</body>
+</html>
